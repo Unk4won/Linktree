@@ -111,4 +111,32 @@ ul {
   justify-content: space-between;
 }
 
+.card__avatar {
+  width: clamp(216px, 50vw, 325px);
+  height: auto;
+  display: block;
+  border-radius: var(--radius-round);
+  border-color: #6af559;
+  border: 2px var(--clr-accent) solid;
+  box-shadow: 0 0 16px 10px rgba(106, 245, 89, 0.15);
+}
+
+.card__name {
+  font-family: var(--font-primary);
+  font-size: var(--text-3xl);
+  color: var(--clr-accent);
+}
+
+.card__rol {
+  font-size: var(--text-lg);
+  font-weight: var(--fw-semibold);
+  font-style: italic;
+}
+
+.card__bio {
+  font-size: var(--text-sm);
+  text-align: center;
+  color: rgba(255, 242, 225, 0.75);
+}
+
 /*UTILITIES*/
