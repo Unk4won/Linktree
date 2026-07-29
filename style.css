@@ -76,6 +76,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  padding: var(--sp-xl);
   gap: var(--sp-lg);
 }
 
@@ -101,7 +102,7 @@ ul {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  max-width: 400px;
+  max-width: clamp(200px, 90%, 400px);
 }
 
 /*UTILITIES*/
