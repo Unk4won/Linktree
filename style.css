@@ -177,4 +177,34 @@ ul {
 .card__link-icon {
   width: clamp(36px, 40%, 46px);
 }
+
+.footer {
+  margin-top: var(--sp-xl); /* Lo separa de la tarjeta principal */
+  text-align: center;
+}
+
+.footer__text {
+  font-size: var(--text-sm);
+  color: rgba(
+    255,
+    242,
+    225,
+    0.6
+  ); /* Color Peach atenuado para no robar atención */
+}
+
+.footer__author {
+  color: var(--clr-accent); /* Tu nombre resalta en verde */
+  font-weight: var(--fw-semibold);
+}
+
+.footer__link {
+  color: var(--clr-text-primary);
+  font-weight: var(--fw-bold);
+  transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+  color: var(--clr-accent-hover);
+}
 /*UTILITIES*/
