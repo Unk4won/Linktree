@@ -87,4 +87,11 @@ ul {
 
 /*COMPONENTS*/
 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45%;
+}
+
 /*UTILITIES*/
