@@ -96,13 +96,12 @@ ul {
   border: 2px solid var(--clr-accent);
   box-shadow: 0 0 15px 20px rgba(106, 245, 89, 0.15);
   border-radius: var(--radius-md);
-  padding: var(--sp-xl);
+  padding: var(--sp-md);
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
-  max-width: clamp(200px, 90%, 400px);
+  width: clamp(200px, 90%, 400px);
 }
 
 /*UTILITIES*/
