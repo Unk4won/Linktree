@@ -8,23 +8,24 @@
       href="/assets/favicon/favicon.ico"
       type="image/x-icon"
     />
-    <!--IMPORTACIONES-->
+    <!-- IMPORTACIONES -->
     <link rel="stylesheet" href="style.css" />
     <script src="/main.js" defer></script>
-    <title>LINKTREE</title>
+    <title>LINKTREE | Adriel Flores</title>
   </head>
   <body>
-    <!--Linktree Card-->
-    <article class="card">
-      <!--HEADER: Profile-->
+    <!-- Linktree Card (Ahora es el contenido principal) -->
+    <main class="card">
+      <!-- HEADER: Profile -->
       <header class="card__header">
         <img
           src="/assets/images/avatar.webp"
-          alt="profile picture"
+          alt="Foto de perfil de Adriel Flores"
           class="card__avatar"
         />
-        <h1 class="card__name">Adriel FLores</h1>
-        <h2 class="card__rol">Fullstack Developer</h2>
+        <h1 class="card__name">Adriel Flores</h1>
+        <!-- Cambiado de h2 a p para respetar la semántica -->
+        <p class="card__rol">Fullstack Developer</p>
         <p class="card__bio">
           Passionate about technology and web development. I share knowledge,
           trends, and projects that connect innovation with real solutions. My
@@ -32,76 +33,103 @@
         </p>
       </header>
 
-      <!--MAIN: Primary links-->
-      <main class="card__main">
+      <!-- MAIN LINKS: Primary links -->
+      <div class="card__content">
         <nav aria-label="Primary links" class="card__nav">
           <ul class="card__links">
-            <li>
+            <!-- Todos los <li> ahora tienen la clase card__item -->
+            <li class="card__item">
               <a
                 href="https://github.com/Unk4won?tab=repositories"
                 class="card__link"
+                target="_blank"
                 rel="noopener noreferrer"
-                >GitHub
+              >
+                GitHub
+                <!-- Íconos con alt vacío para no confundir a lectores de pantalla -->
                 <img
                   src="./assets/images/github-icon.svg"
-                  alt="GitHub icon"
-                  class="card__link-icon"
-              /></a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/adriel-floresionic/?skipRedirect=true"
-                class="card__link"
-                rel="noopener noreferrer"
-                >Linkedin
-                <img
-                  src="./assets/images/linkedin-logo.svg"
-                  alt="Linkedin Icon"
+                  alt=""
+                  aria-hidden="true"
                   class="card__link-icon"
                 />
               </a>
             </li>
-            <li>
+
+            <li class="card__item">
+              <a
+                href="https://www.linkedin.com/in/adriel-floresionic/?skipRedirect=true"
+                class="card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+                <img
+                  src="./assets/images/linkedin-logo.svg"
+                  alt=""
+                  aria-hidden="true"
+                  class="card__link-icon"
+                />
+              </a>
+            </li>
+
+            <li class="card__item">
               <a
                 href="https://x.com/Unk4won"
                 class="card__link"
+                target="_blank"
                 rel="noopener noreferrer"
-                >Twitter
+              >
+                Twitter
                 <img
                   src="./assets/images/twitter-icon.svg"
-                  alt="Twitter icon"
+                  alt=""
+                  aria-hidden="true"
                   class="card__link-icon"
-              /></a>
+                />
+              </a>
             </li>
-            <li>
+
+            <li class="card__item">
               <a
                 href="https://www.instagram.com/unk4won/"
                 class="card__link"
+                target="_blank"
                 rel="noopener noreferrer"
-                >Instagram
+              >
+                Instagram
                 <img
                   src="./assets/images/instagram-logo.svg"
-                  alt="Instagram Icon"
+                  alt=""
+                  aria-hidden="true"
                   class="card__link-icon"
-              /></a>
+                />
+              </a>
             </li>
+
+            <!-- Corregida la clase del <a> y el typo de "TikTok" -->
             <li class="card__item">
               <a
                 href="https://www.tiktok.com/@adriel_flores_dev?is_from_webapp=1&sender_device=pc"
-                class="card__link-icon"
+                class="card__link"
+                target="_blank"
                 rel="noopener noreferrer"
-                >Tikok
+              >
+                TikTok
                 <img
                   src="./assets/images/tiktok-logo.svg"
-                  alt="tiktok icon"
+                  alt=""
+                  aria-hidden="true"
                   class="card__link-icon"
-              /></a>
+                />
+              </a>
             </li>
           </ul>
         </nav>
-      </main>
-    </article>
-    <!--FOOTER: Copyright-->
+      </div>
+    </main>
+
+    <!-- FOOTER: Copyright -->
     <footer class="footer">
       <small class="footer__text">
         @ Developed by <b class="footer__author">Adriel Flores</b>
