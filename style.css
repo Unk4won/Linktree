@@ -5,6 +5,7 @@
 :root {
   /*COLOR PALLET (dark mode + green/peach)*/
   --clr-background: #000000; /* Black: Fondo principal */
+  --clr-surface-dark: #121212; /**/
   --clr-surface: #0a3821; /* Deep Green: Fondo de las tarjetas/botones */
   --clr-text-primary: #fff2e1; /* Peach: Textos principales */
   --clr-accent: #6af559; /* Green vibrante: Detalles y acentos */
@@ -73,7 +74,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   min-height: 100vh;
+  gap: var(--sp-lg);
 }
 
 a {
@@ -88,10 +91,17 @@ ul {
 /*COMPONENTS*/
 
 .card {
+  background-color: var(--clr-surface-dark);
+  border: 2px solid var(--clr-accent);
+  box-shadow: 0 0 15px 20px rgba(106, 245, 89, 0.15);
+  border-radius: var(--radius-md);
+  padding: var(--sp-xl);
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 45%;
+  width: 100%;
+  max-width: 400px;
 }
 
 /*UTILITIES*/
