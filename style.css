@@ -30,6 +30,11 @@
   --leading-loose: 2; /* Para textos que necesitan mucho aire */
 
   /*SPACING AND SIZES (1rem = 16px)*/
+  --sp-sm: 0.5rem; /* 8px */
+  --sp-md: 1rem; /* 16px */
+  --sp-lg: 1.5rem; /* 24px */
+  --sp-xl: 2rem; /* 32px */
+
   --text-xs: 0.75rem; /* 12px - Notas al pie, tooltips, legales */
   --text-sm: 0.875rem; /* 14px - Etiquetas, metadata, botones pequeños */
   --text-base: 1rem; /* 16px - Cuerpo de texto principal, párrafos estándar */
