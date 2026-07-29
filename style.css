@@ -11,8 +11,8 @@
   --clr-accent-hover: #4dd83d; /* Green para el hover */
 
   /*TYPOGRAPHY*/
-  --font-primary: "Bebas Neue", sans-serif;
-  --font-secondary: "Montserrat", sans-serif;
+  --font-primary: "Bebas Neue", sans-serif; /*Para titulos*/
+  --font-secondary: "Montserrat", sans-serif; /*Para el texto body*/
 
   /*Weights*/
   --font-light: 300;
@@ -52,7 +52,17 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 /*BASE*/
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
 
 /*COMPONENTS*/
 
