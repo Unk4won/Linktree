@@ -179,22 +179,17 @@ ul {
 }
 
 .footer {
-  margin-top: var(--sp-xl); /* Lo separa de la tarjeta principal */
+  margin-top: var(--sp-xl);
   text-align: center;
 }
 
 .footer__text {
   font-size: var(--text-sm);
-  color: rgba(
-    255,
-    242,
-    225,
-    0.6
-  ); /* Color Peach atenuado para no robar atención */
+  color: rgba(255, 242, 225, 0.6);
 }
 
 .footer__author {
-  color: var(--clr-accent); /* Tu nombre resalta en verde */
+  color: var(--clr-accent);
   font-weight: var(--fw-semibold);
 }
 
