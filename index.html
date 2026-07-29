@@ -15,13 +15,17 @@
   </head>
   <body>
     <!--Linktree Card-->
-    <article>
+    <article class="card">
       <!--HEADER: Profile-->
-      <header>
-        <img src="/assets/images/avatar.webp" alt="profile picture" />
-        <h1>Adriel FLores</h1>
-        <h2>Fullstack Developer</h2>
-        <p>
+      <header class="card__header">
+        <img
+          src="/assets/images/avatar.webp"
+          alt="profile picture"
+          class="card__avatar"
+        />
+        <h1 class="card__name">Adriel FLores</h1>
+        <h2 class="card__rol">Fullstack Developer</h2>
+        <p class="card__bio">
           Passionate about technology and web development. I share knowledge,
           trends, and projects that connect innovation with real solutions. My
           goal is to inspire and build digital tools that make an impact.
@@ -29,57 +33,68 @@
       </header>
 
       <!--MAIN: Primary links-->
-      <main>
-        <nav>
-          <ul>
+      <main class="card__main">
+        <nav aria-label="Primary links" class="card__nav">
+          <ul class="card__links">
             <li>
-              <a href="https://github.com/Unk4won?tab=repositories" class=""
+              <a
+                href="https://github.com/Unk4won?tab=repositories"
+                class="card__link"
+                rel="noopener noreferrer"
                 >GitHub
                 <img
                   src="./assets/images/github-icon.svg"
                   alt="GitHub icon"
-                  class=""
+                  class="card__link-icon"
               /></a>
             </li>
             <li>
               <a
                 href="https://www.linkedin.com/in/adriel-floresionic/?skipRedirect=true"
-                class=""
+                class="card__link"
+                rel="noopener noreferrer"
                 >Linkedin
                 <img
                   src="./assets/images/linkedin-logo.svg"
                   alt="Linkedin Icon"
-                  class=""
+                  class="card__link-icon"
                 />
               </a>
             </li>
             <li>
-              <a href="https://x.com/Unk4won" class=""
+              <a
+                href="https://x.com/Unk4won"
+                class="card__link"
+                rel="noopener noreferrer"
                 >Twitter
                 <img
                   src="./assets/images/twitter-icon.svg"
                   alt="Twitter icon"
-                  class=""
-              /></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/unk4won/" class=""
-                >Instagram
-                <img
-                  src="./assets/images/instagram-logo.svg"
-                  alt="Instagram Icon"
-                  class=""
+                  class="card__link-icon"
               /></a>
             </li>
             <li>
               <a
+                href="https://www.instagram.com/unk4won/"
+                class="card__link"
+                rel="noopener noreferrer"
+                >Instagram
+                <img
+                  src="./assets/images/instagram-logo.svg"
+                  alt="Instagram Icon"
+                  class="card__link-icon"
+              /></a>
+            </li>
+            <li class="card__item">
+              <a
                 href="https://www.tiktok.com/@adriel_flores_dev?is_from_webapp=1&sender_device=pc"
-                class=""
+                class="card__link-icon"
+                rel="noopener noreferrer"
                 >Tikok
                 <img
                   src="./assets/images/tiktok-logo.svg"
                   alt="tiktok icon"
-                  class=""
+                  class="card__link-icon"
               /></a>
             </li>
           </ul>
@@ -87,17 +102,18 @@
       </main>
     </article>
     <!--FOOTER: Copyright-->
-    <footer>
-      <small>
-        @ Developed by <b>Adriel FLores</b>
+    <footer class="footer">
+      <small class="footer__text">
+        @ Developed by <b class="footer__author">Adriel Flores</b>
         <a
-          href="https://github.com/Unk4won"
+          href="https://github.com/Unk4won?tab=repositories"
           target="_blank"
           rel="noopener noreferrer"
+          class="footer__link"
         >
-          @UNK4WON</a
-        ></small
-      >
+          @UNK4WON
+        </a>
+      </small>
     </footer>
   </body>
 </html>
